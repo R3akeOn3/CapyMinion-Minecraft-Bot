@@ -5,10 +5,10 @@
 Simple Minecraft bot build, with [Minefalyer](https://github.com/PrismarineJS/mineflayer)
 ## Features (for relase v1.0.0)
 ### How the log look like?
- - Line counter
- - Current  time
- - Bot username
- - Log type like, Info, , Warn, Error
+ * *Line counter*
+ * *Current  time*
+ * *Bot username*
+ * *Log type* **like**, **Info**, **Warn**, **Error**
 
 - Loaded config log
 - Login log
