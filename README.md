@@ -1,17 +1,67 @@
 # CapyMinion-Minecraft-Bot
+
 ![Bot Version](https://img.shields.io/badge/Bot%20Version-V1.0.0-blue?logo=javascript&logoSize=1&link=https%3A%2F%2Fgithub.com%2FR3akeOn3%2FCapyMinion-Minecraft-Bot)
 
 ### Capy Minion Minecraft Bot
-Simple Minecraft bot build, with [Minefalyer](https://github.com/PrismarineJS/mineflayer)
-## Features (for relase v1.0.0)
-<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>JavaScript</title><path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/></svg>
-### How the log look like?
- * *Line counter*
- * *Current  time*
- * *Bot username*
- * *Log type* **like**, **Info**, **Warn**, **Error**
-## Logs Features
-- Loaded config log
-- Login log
-- Spawn log
-- 
+A simple Minecraft bot built with [Mineflayer](https://github.com/PrismarineJS/mineflayer).
+
+---
+
+## Features (Release v1.0.0)
+- Reads a **config.JSON** file for configuration.
+- Automatically looks at the **nearest player**.
+
+---
+
+### What does the log look like?
+The logs include:
+- **Line counter**.
+- **Current time**.
+- **Bot username**.
+- **Log type**, such as **Info**, **Warn**, or **Error**.
+
+---
+
+## Log Features
+The bot logs the following events:
+- Configuration loaded.
+- Successful login.
+- Player spawn.
+- Player death.
+- Respawn.
+
+---
+
+## Installation
+1. Clone the bot repository.
+
+---
+
+### Configuring "CONFIG.json"
+#### General Setup:
+Decide whether you are using a **Minecraft Premium account** or a **Minecraft Non-Premium account**.
+
+#### Minecraft Premium Account:
+![image](https://github.com/user-attachments/assets/9cfc2588-8130-44ce-ab2d-3f2173cacb3c)
+- Set **username** to your account email.
+- Set **auth** to `microsoft`.  
+  You will be prompted to log in on **microsoft.com** using a code in your browser. After signing in, the bot will automatically obtain and cache authentication tokens for future use.
+
+#### Minecraft Non-Premium Account:
+- Set **auth** to `offline`.
+- Set **username** to the desired username.
+
+---
+
+### Server Info
+You need to configure the server details:  
+![image](https://github.com/user-attachments/assets/08bdd089-ce1e-4b95-afff-5b58bf0c904b)
+
+- **host**: Set to the server address, e.g., `"hypixel.net"`. For LAN servers, use `"localhost"`.  
+- **version**: Set to `false` for automatic detection, or specify a version (e.g., `"1.8"` to `"1.21"`).  
+- **port** and **needsport**:
+  - If the server requires a specific port, set **needsport** to `true` and provide the **port** number.
+  - For default ports like `"25565"`, set **needsport** to `false`. In this case, the **port** value is ignored.  
+- **owner**: Set this to your **main account username**.
+
+---
