@@ -1,3 +1,7 @@
+// Code writted by: R3akeOn3_
+// github: https://github.com/R3akeOn3/CapyMinion-Minecraft-Bot
+// Do not copy 
+
 import mineflayer from "mineflayer";
 import { readFile} from "fs/promises";
 import chalk from "chalk";
